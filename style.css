@@ -22,7 +22,6 @@ html {
 }
 
 .accordion {
-  /* background-color: aqua; */
   height: 90vh;
   width: 100%;
   display: flex;
@@ -53,7 +52,7 @@ button {
   background-size: cover;
   background-position: center;
   flex: 1 1;
-  transition: all 0.8s;
+  transition: all 0.8s ease-in-out;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -76,7 +75,7 @@ button:nth-child(6) {
   background-image: url(img/res6.png);
 }
 button:focus {
-  flex: 0 0 35vh;
+  flex: 0 0 25vh;
   z-index: 100;
 }
 
