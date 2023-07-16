@@ -15,20 +15,21 @@ html {
   border-radius: 0;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 2rem 2rem;
   overflow: hidden;
 }
 
 .accordion {
+  /* background-color: aqua; */
   height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.9rem;
 }
 
 body {
@@ -74,7 +75,7 @@ button:focus {
   z-index: 100;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   .accordion {
     flex-direction: row;
     height: 40vh;
