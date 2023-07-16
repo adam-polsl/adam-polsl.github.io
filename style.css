@@ -21,10 +21,13 @@ html {
 }
 
 .accordion {
+  height: 90vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 0.2rem;
 }
 
 body {
@@ -33,12 +36,6 @@ body {
   background-color: var(--primary-color);
 }
 
-input {
-  /* visibility: hidden; */
-  /* display: none; */
-  /* width: 1px; */
-  opacity: 1;
-}
 button {
   display: block;
   border: none;
@@ -48,31 +45,54 @@ button {
   color: #fff;
   padding: 1rem 2rem;
   border-radius: 5px;
-  background-image: url(../html-css-basics-02/img/nat-1.jpg);
+  background-image: url(img/1.jpg);
   background-size: cover;
-  height: 0;
 
-  /* transition: all 0.3s ease-in-out; */
+  background-color: aquamarine;
+  /* flex: 1 1 1rem; */
+  transition: all 0.4s;
+  overflow: hidden;
+}
+button:nth-child(1) {
+  background-image: url(img/1.jpg);
+}
+button:nth-child(2) {
+  background-image: url(img/2.jpg);
+}
+button:nth-child(3) {
+  background-image: url(img/3.jpg);
+}
+button:nth-child(4) {
+  background-image: url(img/4.jpg);
+}
+button:nth-child(5) {
+  background-image: url(img/5.jpg);
+}
+button:nth-child(6) {
+  background-image: url(img/6.jpg);
 }
 button:focus {
+  flex: 1 0 80%;
+
+  flex-grow: 2;
   transition: all 0 ease-in-out;
   z-index: 100;
   outline: 3px solid blueviolet;
-  height: 100%;
   /* border: none; */
 }
 
-.check {
+/* .check {
   background-color: aqua;
   display: block;
   width: 10rem;
-}
-input:focus + .check {
+} */
+/* input:focus + .check {
   outline: 3px solid blueviolet;
-}
+} */
 
 @media (min-width: 600px) {
   .accordion {
     flex-direction: row;
+    height: 40vh;
   }
 }
