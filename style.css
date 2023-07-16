@@ -88,6 +88,6 @@ button:focus {
     margin: 10rem auto;
   }
   button:focus {
-    flex: 1 0 30vw;
+    flex: 0 0 30vw;
   }
 }
