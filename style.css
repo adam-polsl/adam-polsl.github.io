@@ -1,0 +1,72 @@
+:root {
+  --primary-color: #333;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 10rem auto;
+  padding: 2rem 2rem;
+  background-color: aqua;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+  background-color: var(--primary-color);
+}
+
+input {
+  /* visibility: hidden; */
+  /* display: none; */
+  /* width: 1px; */
+  opacity: 1;
+}
+button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background-image: url(../html-css-basics-02/img/nat-1.jpg);
+  background-size: cover;
+  height: 0;
+
+  /* transition: all 0.3s ease-in-out; */
+}
+button:focus {
+  transition: all 0 ease-in-out;
+  z-index: 100;
+  outline: 3px solid blueviolet;
+  height: 100%;
+  /* border: none; */
+}
+
+.check {
+  background-color: aqua;
+  display: block;
+  width: 10rem;
+}
+input:focus + .check {
+  outline: 3px solid blueviolet;
+}
