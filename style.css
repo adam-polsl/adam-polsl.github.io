@@ -70,3 +70,9 @@ button:focus {
 input:focus + .check {
   outline: 3px solid blueviolet;
 }
+
+@media (min-width: 600px) {
+  .accordion {
+    flex-direction: row;
+  }
+}
