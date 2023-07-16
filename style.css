@@ -32,6 +32,11 @@ html {
   gap: 0.9rem;
 }
 
+.accordion-item {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.4;
@@ -84,6 +89,6 @@ button:focus {
     margin: 10rem auto;
   }
   button:focus {
-    flex: 1 0 40vw;
+    flex: 1 0 30vw;
   }
 }
